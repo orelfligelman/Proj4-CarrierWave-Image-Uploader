@@ -1,0 +1,1108 @@
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20141120214445)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (6.4ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tite" varchar(255), "avatar" varchar(255), "body" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141120214445"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 16:47:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (25.8ms)
+Completed 200 OK in 230ms (Views: 164.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-11-20 16:47:18 -0500
+Processing by Rails::InfoController#properties as */*
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.6/lib/rails/templates/rails/info/properties.html.erb (0.4ms)
+Completed 200 OK in 26ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 16:49:06 -0500
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 16:49:38 -0500
+
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-20 18:39:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (8.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 1745ms (Views: 1690.6ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-20 18:39:47 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-20 18:39:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 18:39:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 18:39:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 18:39:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 18:39:47 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-20 18:39:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 18:39:47 -0500
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-20 18:39:49 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (139.2ms)
+  Rendered posts/new.html.erb within layouts/application (150.7ms)
+Completed 200 OK in 214ms (Views: 212.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-11-20 18:39:57 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WhvmZyaZ9Y9XqpqhNWVYe3WD1zgTUAzRotpx0tDnTjw=", "post"=>{"tite"=>"oidjsdj", "avatar"=>"oJD;Odj", "body"=>"sfdj"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (30.9ms)[0m  INSERT INTO "posts" ("avatar", "body", "created_at", "tite", "updated_at") VALUES (?, ?, ?, ?, ?)  [["avatar", nil], ["body", "sfdj"], ["created_at", "2014-11-20 23:39:57.770552"], ["tite", "oidjsdj"], ["updated_at", "2014-11-20 23:39:57.770552"]]
+  [1m[36m (14.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 67ms (ActiveRecord: 45.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-11-20 18:39:57 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 76ms (Views: 72.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-20 18:39:57 -0500
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-20 18:39:57 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-20 18:39:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-20 18:39:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-20 18:39:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-20 18:39:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-20 18:39:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-20 18:39:57 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-20 18:40:00 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 64ms (Views: 63.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-21 16:37:17 -0500
+Processing by PostsController#index as HTML
+Completed 500 Internal Server Error in 36ms
+
+LoadError (cannot load such file -- mini_magick (You may need to install the mini_magick gem)):
+  app/uploaders/avatar_uploader.rb:7:in `include'
+  app/uploaders/avatar_uploader.rb:7:in `<class:AvatarUploader>'
+  app/uploaders/avatar_uploader.rb:3:in `<top (required)>'
+  app/models/post.rb:2:in `<class:Post>'
+  app/models/post.rb:1:in `<top (required)>'
+  app/controllers/posts_controller.rb:7:in `index'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-21 16:37:38 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (8.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 110ms (Views: 89.1ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-21 16:37:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:37:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:37:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:37:38 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:37:38 -0500
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:37:38 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:37:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:37:38 -0500
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 16:37:43 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.0ms)
+  Rendered posts/new.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 25ms
+
+SyntaxError (/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+...end=  form_for(@post), :html => {:multipart => true} do |f| ...
+...                               ^
+/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/posts/_form.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+  app/views/posts/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/posts/_form.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1191155185515860314_70206884314000'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 16:37:43 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.1ms)
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+...end=  form_for(@post), :html => {:multipart => true} do |f| ...
+...                               ^
+/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/posts/_form.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+  app/views/posts/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/posts/_form.html.erb:31: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1191155185515860314_70206901108640'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 16:45:24 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (0.9ms)
+  Rendered posts/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 22ms
+
+SyntaxError (/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+...end=  form_for(@post), :html => {:multipart => true} do |f| ...
+...                               ^
+/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/posts/_form.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+  app/views/posts/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/posts/_form.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1191155185515860314_70206901108640'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.6ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2014-11-21 16:45:28 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 98ms (Views: 80.7ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:45:28 -0500
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:45:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:45:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:45:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:45:28 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:45:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:45:28 -0500
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 16:45:30 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.0ms)
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+...end=  form_for(@post), :html => {:multipart => true} do |f| ...
+...                               ^
+/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/posts/_form.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+  app/views/posts/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/posts/_form.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1191155185515860314_70206884314000'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 16:45:30 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.0ms)
+  Rendered posts/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+...end=  form_for(@post), :html => {:multipart => true} do |f| ...
+...                               ^
+/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...html => {:multipart => true} do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/_form.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/posts/_form.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+  app/views/posts/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/posts/_form.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1191155185515860314_70206901108640'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 16:45:48 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (36.0ms)
+  Rendered posts/new.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:45:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:45:49 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:45:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:45:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:45:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:45:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:45:49 -0500
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-11-21 16:46:10 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FaWLxvnRUl73oTu4K/FUlmSh3shEIrD8+9FSUGKHBWI=", "post"=>{"tite"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fb4a0d7f468 @tempfile=#<Tempfile:/var/folders/fv/btl9lnh12nz9r4ws9drn47ch0000gn/T/RackMultipart20141121-7287-1cdyj2p>, @original_filename="tweety_plays_baseball.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[avatar]\"; filename=\"tweety_plays_baseball.jpg\"\r\nContent-Type: image/jpeg\r\n">, "body"=>""}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (45.9ms)[0m  [1mINSERT INTO "posts" ("avatar", "body", "created_at", "tite", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["avatar", "tweety_plays_baseball.jpg"], ["body", ""], ["created_at", "2014-11-21 21:46:10.723059"], ["tite", ""], ["updated_at", "2014-11-21 21:46:10.723059"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 56ms (ActiveRecord: 47.0ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-11-21 16:46:10 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 91ms (Views: 57.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:46:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:46:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:46:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:46:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:46:11 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:46:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:46:11 -0500
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-11-21 16:47:52 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined local variable or method `avatar' for #<#<Class:0x007fb4a2580c38>:0x007fb4a2caeff0>):
+     7: 
+     8: <p>
+     9:   <strong>Avatar:</strong>
+    10:   <%= image_tag avatar.image_url.to_s %>
+    11:   <%= @post.avatar %>
+    12: </p>
+    13: 
+  app/views/posts/show.html.erb:10:in `_app_views_posts_show_html_erb___1682505789851616799_70206901018740'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-11-21 16:48:27 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `image_url' for #<Post:0x007fb4a2a8ff30>):
+     7: 
+     8: <p>
+     9:   <strong>Avatar:</strong>
+    10:   <%= image_tag @post.image_url.to_s %>
+    11:   <%= @post.avatar %>
+    12: </p>
+    13: 
+  app/views/posts/show.html.erb:10:in `_app_views_posts_show_html_erb___1682505789851616799_70206882900200'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-11-21 16:48:43 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `url' for #<Post:0x007fb4a24e3528>):
+     7: 
+     8: <p>
+     9:   <strong>Avatar:</strong>
+    10:   <%= image_tag @post.url.to_s %>
+    11:   <%= @post.avatar %>
+    12: </p>
+    13: 
+  app/views/posts/show.html.erb:10:in `_app_views_posts_show_html_erb___1682505789851616799_70206896933200'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-11-21 16:48:52 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/adityanarayan/Desktop/RubymineProjects/carrierwave_demo_photo_post/app/views/posts/show.html.erb:10: syntax error, unexpected tIVAR, expecting '('
+...end=( image_tag @post.@post_url.to_s );@output_buffer.safe_a...
+...                               ^):
+  app/views/posts/show.html.erb:10: syntax error, unexpected tIVAR, expecting '('
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.1ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-11-21 16:49:52 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:49:52 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:49:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:49:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:49:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:49:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:49:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:49:52 -0500
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-11-21 16:52:23 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:52:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:52:23 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:52:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:52:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:52:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:52:23 -0500
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:52:23 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-21 16:52:31 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:52:31 -0500
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:52:31 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:52:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:52:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:52:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:52:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:52:31 -0500
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 16:52:34 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.0ms)
+  Rendered posts/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 104ms (Views: 103.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-11-21 16:53:21 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FaWLxvnRUl73oTu4K/FUlmSh3shEIrD8+9FSUGKHBWI=", "post"=>{"tite"=>"tweety plays baseball", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fb4a2531fe8 @tempfile=#<Tempfile:/var/folders/fv/btl9lnh12nz9r4ws9drn47ch0000gn/T/RackMultipart20141121-7287-hdzr8k>, @original_filename="tweety_plays_baseball.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[avatar]\"; filename=\"tweety_plays_baseball.jpg\"\r\nContent-Type: image/jpeg\r\n">, "body"=>"playing baseball "}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("avatar", "body", "created_at", "tite", "updated_at") VALUES (?, ?, ?, ?, ?)  [["avatar", "tweety_plays_baseball.jpg"], ["body", "playing baseball "], ["created_at", "2014-11-21 21:53:21.296422"], ["tite", "tweety plays baseball"], ["updated_at", "2014-11-21 21:53:21.296422"]]
+  [1m[36m (17.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 33ms (ActiveRecord: 17.3ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2014-11-21 16:53:21 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:53:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:53:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:53:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:53:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:53:21 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:53:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:53:21 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-21 16:57:16 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 103ms (Views: 76.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:57:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:57:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:57:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:57:17 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:57:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:57:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:57:17 -0500
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 16:57:19 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.4ms)
+  Rendered posts/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-11-21 16:57:29 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FaWLxvnRUl73oTu4K/FUlmSh3shEIrD8+9FSUGKHBWI=", "post"=>{"tite"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fb4a0d0d610 @tempfile=#<Tempfile:/var/folders/fv/btl9lnh12nz9r4ws9drn47ch0000gn/T/RackMultipart20141121-7287-1biq20y>, @original_filename="arrow-rotate-clockwise.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[avatar]\"; filename=\"arrow-rotate-clockwise.png\"\r\nContent-Type: image/png\r\n">, "body"=>""}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("avatar", "body", "created_at", "tite", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["avatar", "arrow-rotate-clockwise.png"], ["body", ""], ["created_at", "2014-11-21 21:57:29.844734"], ["tite", ""], ["updated_at", "2014-11-21 21:57:29.844734"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 407ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-11-21 16:57:29 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:57:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:57:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:57:30 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:57:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:57:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:57:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:57:30 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-21 16:57:33 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 16:57:38 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.3ms)
+  Rendered posts/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-11-21 16:58:15 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FaWLxvnRUl73oTu4K/FUlmSh3shEIrD8+9FSUGKHBWI=", "post"=>{"tite"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fb4a13bc920 @tempfile=#<Tempfile:/var/folders/fv/btl9lnh12nz9r4ws9drn47ch0000gn/T/RackMultipart20141121-7287-ybmv5m>, @original_filename="IMG_6159-1.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[avatar]\"; filename=\"IMG_6159-1.JPG\"\r\nContent-Type: image/jpeg\r\n">, "body"=>""}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("avatar", "body", "created_at", "tite", "updated_at") VALUES (?, ?, ?, ?, ?)  [["avatar", "IMG_6159-1.JPG"], ["body", ""], ["created_at", "2014-11-21 21:58:15.359881"], ["tite", ""], ["updated_at", "2014-11-21 21:58:15.359881"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 91ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2014-11-21 16:58:15 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 16:58:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 16:58:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 16:58:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 16:58:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 16:58:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 16:58:15 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 16:58:15 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-21 16:58:17 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-21 17:22:50 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 205ms (Views: 203.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 17:22:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 17:22:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 17:22:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 17:22:50 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 17:22:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 17:22:50 -0500
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 17:22:50 -0500
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 17:23:04 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.6ms)
+  Rendered posts/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-11-21 17:23:18 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FaWLxvnRUl73oTu4K/FUlmSh3shEIrD8+9FSUGKHBWI=", "post"=>{"tite"=>"faefaf", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fb4a14d7008 @tempfile=#<Tempfile:/var/folders/fv/btl9lnh12nz9r4ws9drn47ch0000gn/T/RackMultipart20141121-7287-4q5cb8>, @original_filename="tweety_plays_baseball.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[avatar]\"; filename=\"tweety_plays_baseball.jpg\"\r\nContent-Type: image/jpeg\r\n">, "body"=>"dfasfafe"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("avatar", "body", "created_at", "tite", "updated_at") VALUES (?, ?, ?, ?, ?)  [["avatar", "tweety_plays_baseball.jpg"], ["body", "dfasfafe"], ["created_at", "2014-11-21 22:23:18.549487"], ["tite", "faefaf"], ["updated_at", "2014-11-21 22:23:18.549487"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 68ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2014-11-21 17:23:18 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 17:23:18 -0500
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 17:23:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 17:23:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 17:23:18 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 17:23:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 17:23:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 17:23:18 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-21 17:23:47 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-21 17:27:19 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 17:27:19 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-21 17:27:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 17:27:19 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 17:27:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 17:27:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 17:27:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 17:27:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 17:27:19 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-21 17:27:38 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-21 17:27:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 17:27:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 17:27:39 -0500
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 17:27:39 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 17:27:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 17:27:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 17:27:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 17:27:39 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-21 17:28:22 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-21 17:28:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 17:28:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 17:28:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 17:28:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 17:28:23 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 17:28:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 17:28:23 -0500
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 17:28:23 -0500
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 17:29:16 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.3ms)
+  Rendered posts/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 110ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-11-21 17:30:16 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.1ms)
+  Rendered posts/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 100ms (Views: 99.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-11-21 17:30:39 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FaWLxvnRUl73oTu4K/FUlmSh3shEIrD8+9FSUGKHBWI=", "post"=>{"tite"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fb4a0adfeb0 @tempfile=#<Tempfile:/var/folders/fv/btl9lnh12nz9r4ws9drn47ch0000gn/T/RackMultipart20141121-7287-d7tuxn>, @original_filename="  .png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[avatar]\"; filename=\"  .png\"\r\nContent-Type: image/png\r\n">, "body"=>""}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("avatar", "body", "created_at", "tite", "updated_at") VALUES (?, ?, ?, ?, ?)  [["avatar", "__.png"], ["body", ""], ["created_at", "2014-11-21 22:30:39.352196"], ["tite", ""], ["updated_at", "2014-11-21 22:30:39.352196"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 132ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2014-11-21 17:30:39 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 79ms (Views: 77.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-21 17:30:42 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-21 17:31:48 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 103ms (Views: 102.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+
+Started GET "/uploads/post/avatar/2/thumb_tweety_plays_baseball.jpg" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+ActionController::RoutingError (No route matches [GET] "/uploads/post/avatar/2/thumb_tweety_plays_baseball.jpg"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (61.4ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (84.7ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+
+Started GET "/uploads/post/avatar/3/thumb_tweety_plays_baseball.jpg" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+ActionController::RoutingError (No route matches [GET] "/uploads/post/avatar/3/thumb_tweety_plays_baseball.jpg"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.4ms)
+
+
+Started GET "/uploads/post/avatar/2/thumb_tweety_plays_baseball.jpg" for 127.0.0.1 at 2014-11-21 17:31:49 -0500
+
+ActionController::RoutingError (No route matches [GET] "/uploads/post/avatar/2/thumb_tweety_plays_baseball.jpg"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.1ms)
